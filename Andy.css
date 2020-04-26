@@ -1,0 +1,241 @@
+/*esercizio 1*/
+.ex-1-square{
+  background: inherit;
+  transition: background 5s;
+}
+.ex-1-square:hover{
+  background: red;
+}
+/*fine esercizio 1*/
+
+/*esercizio 2*/
+.ex-2-square{
+  transition: width 2s;
+}
+.ex-2-square:active{
+  width: 100%;
+}
+/*fine esercizio 2*/
+
+/*esercizio 3*/
+.ex-3-square{
+  border-radius: 0;
+  transition: border-radius 1s;
+}
+.ex-3-square:hover{
+    border-radius: 50%;
+}
+/*fine esercizio 3*/
+
+/*esercizio 4*/
+.ex-4-square{
+  transition: background 1s;
+}
+.ex-4-square:hover{
+  background: inherit;
+}
+/*fine esercizio 4*/
+
+/*esercizio 5*/
+.ex-5-square{
+  transition: 2s;
+}
+.ex-5-square:hover{
+  transform: scale(2);
+}
+.ex-5-square:active{
+  transform: scale(0.5);
+}
+/*fine esercizio 5*/
+
+/*esercizio 6*/
+.ex-6-img:hover{
+  filter: grayscale(1);
+}
+/*fine esercizio 6*/
+
+/*esercizio 7*/
+.ex-7-img{
+  transition: 2s;
+}
+.ex-7-img:hover{
+  filter: grayscale(1);
+}
+/*fine esercizio 7*/
+
+/*esercizio 8*/
+.ex-8-img{
+  transition: 2s;
+}
+.ex-8-img:hover{
+  filter: grayscale(0.7);
+  border-radius: 25px;
+}
+/*fine esercizio 8*/
+
+/*esercizio 9*/
+.ex-9-img{
+  transition: 2s;
+}
+.ex-9-img:hover{
+  filter: grayscale(0.7);
+  border-radius: 25px;
+  transform: scale(1.5);
+}
+/*fine esercizio 9*/
+
+
+/*esercizio 10*/
+.ex-10-icon{
+  transform: rotate(0);
+  animation-name: giro;
+  animation-duration: 0.9s;
+  animation-iteration-count: infinite;
+}
+@keyframes giro {
+  0%{
+    transform: rotate(0deg);
+  }
+  13%{
+    transform: rotate(-45deg);
+  }
+  25%{
+    transform: rotate(-90deg);
+  }
+  37%{
+    transform: rotate(-135deg);
+  }
+  50%{
+    transform: rotate(-180deg);
+  }
+  63%{
+    transform: rotate(-225deg);
+  }
+  75%{
+    transform: rotate(-270deg);
+  }
+  87%{
+    transform: rotate(-315deg);
+  }
+  100%{
+    transform: rotate(-360deg);
+  }
+}
+/*fine esercizio 10*/
+
+/* esercizio 11*/
+.ex-11-icon:hover{
+  animation-name: mezzogiro;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+}
+@keyframes mezzogiro{
+  0%{
+    transform: rotate(0deg);
+  }
+  90%{
+    transform: rotate(315deg);
+  }
+  100%{
+    transform: rotate(0deg);
+  }
+}
+/*fine esercizio 11*/
+
+/* esercizio 12*/
+.ex-12-button:hover .ex-12-top-white {
+  animation-name: movetop;
+  animation-duration: 2s;
+}
+@keyframes movetop{
+  0%{
+    left:10%;
+    }
+  50%{
+    left:calc(100% - 60px);
+  }
+  100%{
+    left:10%;
+  }
+}
+  .ex-12-button:hover .ex-12-bottom-white{
+    animation-name: movebottom;
+    animation-duration: 2s;
+  }
+  @keyframes movebottom{
+    0%{
+      right:20%;
+      }
+    50%{
+      right:calc(100% - 60px);
+    }
+    100%{
+      right:20%;
+    }
+  }
+/* fine esercizio 12*/
+
+/* esercizio 13*/
+.ex-13-button:hover .ex-13-top-white{
+  animation-name: topsquare;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+}
+@keyframes topsquare{
+  0%{
+    left: 10%;
+    top: -10px;
+    }
+  20%{
+    left:calc(100% - 30px);
+    top: -10px;
+  }
+  45%{
+    left:calc(100% - 30px);
+    top: 100%;
+  }
+  65%{
+    left: -10px;
+    top: 100%;
+  }
+  85%{
+    left: -10px;
+    top: -10px;
+  }
+  100%{
+    left: 10%;
+    top: -10px;
+  }
+}
+.ex-13-button:hover .ex-13-bottom-white{
+  animation-name: bottomsquare;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+}
+@keyframes bottomsquare{
+  0%{
+   right: 20%;
+   bottom: -10px;
+    }
+  20%{
+    right: calc(100% - 30px);
+    bottom: -10px;
+  }
+  45%{
+    right: calc(100% - 30px);
+    bottom: 100%;
+  }
+  65%{
+    right: -10px;
+    bottom: 100%;
+  }
+  85%{
+    right: -10px;
+    bottom: -10px;
+  }
+  100%{
+    right: 20%;
+    bottom: -10px;
+  }
+}
+/* fine esercizio 13*/
